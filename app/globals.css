@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-navy font-body;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: #DBEAFE;
+    color: #2563EB;
+  }
+}
+
+@layer components {
+  .section-tag {
+    @apply inline-block text-xs font-body font-semibold tracking-[0.15em] uppercase text-accent mb-3;
+  }
+  .section-heading {
+    @apply font-display text-4xl md:text-5xl font-normal leading-tight text-navy mb-5;
+  }
+  .card {
+    @apply bg-white border border-border rounded-2xl p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5;
+  }
+  .pill {
+    @apply text-xs font-body font-medium px-3 py-1 rounded-full bg-accent-light text-accent;
+  }
+  .skill-pill {
+    @apply text-xs font-body px-2.5 py-1 rounded-md border border-border text-muted bg-white;
+  }
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.65s ease both;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.22s; }
+.delay-3 { animation-delay: 0.34s; }
+.delay-4 { animation-delay: 0.46s; }
+.delay-5 { animation-delay: 0.58s; }
