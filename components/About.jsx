@@ -1,7 +1,7 @@
 const stats = [
   { value: "3rd",  label: "Year of Engineering" },
   { value: "5+",   label: "Languages Known" },
-  { value: "2",    label: "IBM Certificates" },
+  { value: "3",    label: "IBM Certificates" },
   { value: "2",    label: "Completed Projects" },
 ];
 
